@@ -6,8 +6,16 @@
 </head>
 <body>
 <div id="app">
-  <img v-bind:src="path" alt="ロゴ画像"
-    v-on:mouseenter="onmouseenter" v-on:mouseleave="onmouseleave" />
+  <div id="main"
+    v-on:click.left="onleftclick"
+    v-on:click.right.prevent="onrightclick">
+  </div>
+  <ul class="cxt" v-bind:style="pos" v-show="show">
+    <li><a href="https://wings.msn.to/index.php/-/A-08/">ヘルプ</a></li>
+    <li><a href="https://wings.msn.to/index.php/-/A-14/">質問掲示板</a></li>
+    <li><a href="https://wings.msn.to/index.php/-/A-11/">よくある質問一覧</a></li>
+  </ul>
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
 <script src="js/event_mouse.js"></script>
