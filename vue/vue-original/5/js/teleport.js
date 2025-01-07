@@ -11,7 +11,7 @@ Vue
               value="ダイヤルログを開く" />
               </form>
               <teleport to="#popup">
-                <div id="my-dialog" class"dialog" v-if="show">
+                <div id="my-dialog" class="dialog" v-if="show">
                   <p>独自のダイアログです。</p>
                   <input type="button" v-on:click="onclick(false)" value="閉じる" />
                 </div>
