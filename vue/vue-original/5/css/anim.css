@@ -1,0 +1,25 @@
+#panel {
+  border: 1px solid #000;
+  width: 350px;
+  overflow: hidden;
+}
+
+.v-enter-active, .v-leave-active {
+  transition: height 1s;
+}
+
+.v-enter-from {
+  height: 0px;
+}
+
+.v-enter-to {
+  height: 180px;
+}
+
+.v-leave-from {
+  height: 180px;
+}
+
+.v-leave-to {
+  height: 0px;
+} 
